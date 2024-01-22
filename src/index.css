@@ -1,13 +1,134 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+   box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+   margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: grey;
+}
+
+.pc {
+   position: relative;
+   display: flex;
+   justify-content: center;
+}
+
+.ps {
+   z-index: 0;
+   margin-top: 30px;
+   background-color: rgba(0, 0, 0, 0.7);
+   border-radius: 30px 30px 0 0;
+   width: 300px;
+   height: 270px;
+}
+
+.profile {
+   z-index: 1;
+   width: 300px;
+}
+
+.profile:hover {
+   scale: 1.1;
+   overflow: hidden;
+}
+
+.id {
+   display: flex;
+   position: relative;
+   justify-content: center;
+}
+
+.is {
+   z-index: 0;
+   width: 300px;
+   background-color: rgba(0, 0, 0, 1);
+}
+
+.is > h4 {
+   color: rgba(255, 255, 255, 0.69);
+   width: 300px;
+   text-align: center;
+   font-size: 25px;
+   height: 1px;
+}
+
+.is > h5 {
+   width: 300px;
+   height: 3;
+   color: rgba(255, 255, 255, 0.39);
+   font-weight: lighter;
+   font-size: 15px;
+   text-align: center;
+   height: 1px;
+}
+
+.da {
+   display: flex;
+   justify-content: center;
+   margin-block: 16px;
+}
+
+.da > a {
+   text-decoration: none;
+   width: 300px;
+   text-align: center;
+   color: rgba(255, 255, 255, 0.39);
+   font-size: small;
+}
+
+.db {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 16px;
+}
+
+button {
+   background-color: #e7e7e7;
+   border: none;
+   color: black;
+   padding: 10px 36px;
+   text-align: center;
+   text-decoration: none;
+   font-size: 16px;
+   width: 80%;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.dc {
+   display: flex;
+   justify-content: center;
+}
+
+.content {
+   z-index: 2;
+   width: 300px;
+   background-color: rgba(0, 0, 0, 1);
+   color: #e7e7e7;
+   padding-inline: 30px;
+   letter-spacing: 0.5px;
+   word-spacing: 0.8px;
+   font-size: 13px;
+   text-align: left;
+   font-weight: 100;
+}
+
+.df {
+   display: flex;
+   justify-content: center;
+}
+
+footer {
+   background-color: rgba(0, 0, 0, 1);
+   width: 300px;
+   text-align: center;
+   border-radius: 0 0 30px 30px;
+   margin-bottom: 30px;
+   height: 30px;
+}
+small {
+   color: #e7e7e7;
+   font-size: 7px;
+   font-weight: thin;
 }
